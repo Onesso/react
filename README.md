@@ -1,3 +1,46 @@
+# How to upload a react web application to github pages
+
+Here is the youtube video for reference https://www.youtube.com/watch?v=gtODigNB6Is
+
+# step 1.
+Create a new repo.
+
+# step 2.
+clone your repo to your local machine
+
+# step 3.
+create a react app on same directory i.e npx create-react-app tutorial
+
+# step 4.
+Move the react files to the root directory.
+You can archive this by deleting the node modules cut everything that is in the tutorial directory and past them in the root dir.
+npm install to return the node modules.
+
+# step 5.
+Add homepage to package.json i.e "homepage":"https://onesso/github.io/tutorial",
+
+# step 6.
+Install github pages package i.e npm i gh-pages
+
+# step 7
+Add deploy scripts to packages.json i.e.       "predeploy": "npm run build",
+                                                "deploy": "gh-pages -d build",
+this is written on the script section.
+
+# step 8.
+push the code to github repo
+
+# step 9.
+Deploy the code i.e. npm run deploy
+
+# step 10.
+Test the github link
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
